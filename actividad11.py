@@ -31,12 +31,12 @@ for ID, table in propietarios.items():
     print(f"NIT: {ID}\n")
     print(f"Nombre: {table["full_name"]}")
     print(f"Telefono: {table["phone_number"]}")
-          for placa, datos in vehiculos.items():
-              print(f"Placa:{table["placa"]}\n")
-              print(f"Marca:{table["marca"]}\n")
-              print(f"modelo: {table["model"]}\n")
-              print(f"año: {table["year"]}\n")
-              print(f"¿Impuesto pagado?: {table["tax"]}")
+    for placa, datos in vehiculos.items():
+        print(f"Placa:{table["placa"]}\n")
+        print(f"Marca:{table["marca"]}\n")
+        print(f"modelo: {table["model"]}\n")
+        print(f"año: {table["year"]}\n")
+        print(f"¿Impuesto pagado?: {table["tax"]}")
 print("-"*8 + "Busqueda de propietario: "+ "-"*8)
 search = input("Ingrese NIT del propietario a buscar: ")
 if search in propietarios:
